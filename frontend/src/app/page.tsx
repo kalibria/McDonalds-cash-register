@@ -1,9 +1,11 @@
-import Image from 'next/image'
+import WrapperNavigationMenu from 'components/ui/NavigationMenu';
+
 
 export default function Home() {
   return (
     <main >
-     <p>Hello World!</p>
+     <p>Menu</p>
+      <WrapperNavigationMenu />
     </main>
   )
 }
