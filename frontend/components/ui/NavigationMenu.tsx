@@ -10,8 +10,24 @@ import {
 } from '@radix-ui/react-navigation-menu';
 import Link from 'next/link';
 
+interface IProduct {
+  productName: string,
+  price: number
+}
 
-const WrapperNavigationMenu = () =>{
+interface IProducts {
+  burgers: IProduct[],
+  drinks: IProduct[],
+  fries: IProduct[],
+  desserts: IProduct[],
+  salads: IProduct[]
+}
+
+
+
+const WrapperNavigationMenu = ({burgers,drinks,fries,desserts,salads}:IProducts) =>{
+
+
   return <NavigationMenu>
     <NavigationMenuList>
       <NavigationMenuItem>
